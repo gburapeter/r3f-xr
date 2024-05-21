@@ -1,8 +1,7 @@
-import { XRButton, XR, Controllers, Hands, ARButton } from "@react-three/xr";
 import { Canvas } from "@react-three/fiber";
+import { ARButton, Controllers, Hands, XR } from "@react-three/xr";
 
 import "./App.css";
-import { Panel } from "./Panel";
 
 function App() {
 	return (
@@ -13,7 +12,6 @@ function App() {
 				<XR>
 					<Controllers />
 					<Hands />
-					<Panel />
 				</XR>
 			</Canvas>
 		</>
