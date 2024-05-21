@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import { ARButton, Controllers, Hands, XR } from "@react-three/xr";
+import { Controllers, Hands, XR, XRButton } from "@react-three/xr";
 
 import "./App.css";
 import { Panel } from "./Paneel";
@@ -7,7 +7,7 @@ import { Panel } from "./Paneel";
 function App() {
 	return (
 		<>
-			<ARButton />
+			<XRButton mode="AR" />
 			<Canvas>
 				<ambientLight intensity={5} color={"blue"} />
 				<XR>
