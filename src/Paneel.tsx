@@ -23,43 +23,35 @@ type GLTFResult = GLTF & {
 
 export function Panel(props: JSX.IntrinsicElements["group"]) {
 	const { nodes } = useGLTF("/paneel.glb") as GLTFResult;
+	const material = new THREE.MeshStandardMaterial({ color: "blue" });
 	return (
-		<group scale={5} {...props} dispose={null}>
-			<mesh
-				geometry={nodes.frame_left.geometry}
-				material={nodes.frame_left.material}
-			/>
-			<mesh
-				geometry={nodes.glass.geometry}
-				material={nodes.glass.material}
-			/>
-			<mesh
-				geometry={nodes.frame_right.geometry}
-				material={nodes.frame_right.material}
-			/>
+		<group scale={1} {...props} dispose={null}>
+			<mesh geometry={nodes.frame_left.geometry} material={material} />
+			<mesh geometry={nodes.glass.geometry} material={material} />
+			<mesh geometry={nodes.frame_right.geometry} material={material} />
 			<mesh
 				geometry={nodes.frame_top.geometry}
-				material={nodes.frame_top.material}
+				material={material}
 				scale={[1.003, 1, 1]}
 			/>
 			<mesh
 				geometry={nodes.frame_bottom.geometry}
-				material={nodes.frame_bottom.material}
+				material={material}
 				scale={[1.002, 1, 1]}
 			/>
 			<mesh
 				geometry={nodes.misc_0.geometry}
-				material={nodes.misc_0.material}
+				material={material}
 				scale={[1.046, 1.144, 1]}
 			/>
 			<mesh
 				geometry={nodes.beam.geometry}
-				material={nodes.beam.material}
+				material={material}
 				position={[0, 1.669, 0]}
 			/>
 			<mesh
 				geometry={nodes.misc_1.geometry}
-				material={nodes.misc_1.material}
+				material={material}
 				scale={[1.047, 1.144, 1]}
 			/>
 		</group>
