@@ -3,7 +3,6 @@ import { ARButton, XR } from "@react-three/xr";
 
 import { OrbitControls } from "@react-three/drei";
 import "./App.css";
-import { Panel } from "./Paneel";
 
 function App() {
 	return (
