@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import { ARButton, Controllers, Hands, XR } from "@react-three/xr";
+import { ARButton, XR } from "@react-three/xr";
 
 import { OrbitControls } from "@react-three/drei";
 import "./App.css";
@@ -12,9 +12,6 @@ function App() {
 
 			<Canvas camera={{ position: [3, 3, 6] }}>
 				<XR>
-					<ambientLight intensity={5} color={"blue"} />
-					<Controllers />
-					<Hands />
 					<ambientLight />
 					<Panel />
 					<OrbitControls />
