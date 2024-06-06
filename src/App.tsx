@@ -13,7 +13,11 @@ function App() {
 			<Canvas camera={{ position: [3, 3, 6] }}>
 				<XR>
 					<ambientLight />
-					<Panel />
+					{/* <Panel /> */}
+					<mesh>
+						<boxGeometry />
+						<meshBasicMaterial color="blue" />
+					</mesh>
 					<OrbitControls />
 				</XR>
 			</Canvas>
