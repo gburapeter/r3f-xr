@@ -1,9 +1,9 @@
 import { Canvas } from "@react-three/fiber";
-import { ARButton, Controllers, Hands, XR, XRButton } from "@react-three/xr";
+import { ARButton, Controllers, Hands, XR } from "@react-three/xr";
 
+import { OrbitControls } from "@react-three/drei";
 import "./App.css";
 import { Panel } from "./Paneel";
-import { OrbitControls } from "@react-three/drei";
 
 function App() {
 	return (
