@@ -8,7 +8,7 @@ function App() {
 	return (
 		<>
 			<ARButton />
-
+			{/* bro */}
 			<Canvas camera={{ position: [3, 3, 6] }}>
 				<XR>
 					<ambientLight />
